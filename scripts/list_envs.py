@@ -5,7 +5,7 @@ from prettytable import PrettyTable
 
 import mjlab
 import mjlab.tasks  # noqa: F401
-import src.tasks
+import unitree_mjlab.tasks
 from mjlab.tasks.registry import list_tasks
 
 

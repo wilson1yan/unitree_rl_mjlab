@@ -10,8 +10,8 @@ import mjlab
 from mjlab.entity import Entity
 from mjlab.scene import Scene
 from mjlab.sim.sim import Simulation, SimulationCfg
-from src.tasks.tracking.config.g1.env_cfgs import unitree_g1_flat_tracking_env_cfg
-from src.tasks.tracking.config.g1_23dof.env_cfgs import unitree_g1_23dof_flat_tracking_env_cfg
+from unitree_mjlab.tasks.tracking.config.g1.env_cfgs import unitree_g1_flat_tracking_env_cfg
+from unitree_mjlab.tasks.tracking.config.g1_23dof.env_cfgs import unitree_g1_23dof_flat_tracking_env_cfg
 from mjlab.utils.lab_api.math import (
   axis_angle_from_quat,
   quat_conjugate,
@@ -365,7 +365,7 @@ def main(
       "right_wrist_pitch_joint",
       "right_wrist_yaw_joint",
     ]
-    output_dir = "./src/assets/motions/g1"
+    output_dir = "./unitree_mjlab/assets/motions/g1"
   elif robot == "g1_23dof":
     scene = Scene(unitree_g1_23dof_flat_tracking_env_cfg().scene, device=device)
     joint_names=[    # 23 Dof
@@ -393,7 +393,7 @@ def main(
       "right_elbow_joint",
       "right_wrist_roll_joint",
     ]
-    output_dir = "./src/assets/motions/g1_23dof"
+    output_dir = "./unitree_mjlab/assets/motions/g1_23dof"
   else:
     raise ValueError(f"Unsupported robot: {robot}")
 
