@@ -10,8 +10,8 @@ INSTALL_REQUIRES = [
 
 # Installation operation
 setup(
-    name="unitree_mjlab",
-    packages=["unitree_mjlab"],
+    name="unitree_rl_mjlab",
+    packages=["unitree_rl_mjlab"],
     version="0.0.1",
     install_requires=INSTALL_REQUIRES,
 )
