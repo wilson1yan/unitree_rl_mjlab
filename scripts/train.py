@@ -196,7 +196,7 @@ def main():
   # Parse first argument to choose the task.
   # Import tasks to populate the registry.
   import mjlab.tasks  # noqa: F401
-  import unitree_mjlab.tasks
+  import unitree_rl_mjlab.tasks
 
   all_tasks = list_tasks()
   chosen_task, remaining_args = tyro.cli(
