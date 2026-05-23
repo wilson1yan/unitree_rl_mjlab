@@ -14,4 +14,5 @@ setup(
     packages=find_packages(),
     version="0.0.1",
     install_requires=INSTALL_REQUIRES,
+    package_data={"unitree_rl_mjlab": ["**/*.xml", "**/*.STL", "**/*.csv", "**/*.npz"]},
 )
